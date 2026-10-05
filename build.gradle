@@ -196,7 +196,3 @@ publishing {
         }
     }
 }
-
-if (file('mcreator.gradle').exists()) {
-    apply from: 'mcreator.gradle'
-}

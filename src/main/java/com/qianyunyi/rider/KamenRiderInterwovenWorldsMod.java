@@ -48,11 +48,9 @@ public class KamenRiderInterwovenWorldsMod {
 	public static final String MODID = "kamen_rider_interwoven_worlds";
 
 	public KamenRiderInterwovenWorldsMod() {
-		// Start of user code block mod constructor
 		// 注册配置文件
 		ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, AdventureConfig.SPEC,
 				"kamen_rider_interwoven_worlds-common.toml");
-		// End of user code block mod constructor
 		MinecraftForge.EVENT_BUS.register(this);
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
 		KamenRiderInterwovenWorldsModSounds.REGISTRY.register(bus);
@@ -67,13 +65,9 @@ public class KamenRiderInterwovenWorldsMod {
 		ModRecipeTypes.RECIPE_TYPES.register(bus);
 		ModRecipeTypes.RECIPE_SERIALIZERS.register(bus);
 
-		// Start of user code block mod init
 		// 在 mod 事件总线上注册配置重载监听
 		bus.addListener(this::onConfigEvent);
-		// End of user code block mod init
 	}
-
-	// Start of user code block mod methods
 
 	/**
 	 * 配置文件加载/重载时，同步更新 GurongiHuntingLaw 的实体类型注册表。
@@ -90,7 +84,6 @@ public class KamenRiderInterwovenWorldsMod {
 		}
 	}
 
-	// End of user code block mod methods
 	private static final String PROTOCOL_VERSION = "1";
 	public static final SimpleChannel PACKET_HANDLER = NetworkRegistry.newSimpleChannel(new ResourceLocation(MODID, MODID), () -> PROTOCOL_VERSION, PROTOCOL_VERSION::equals, PROTOCOL_VERSION::equals);
 	private static int messageID = 0;

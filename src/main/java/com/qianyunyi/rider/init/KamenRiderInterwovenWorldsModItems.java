@@ -1,7 +1,3 @@
-
-/*
- *    MCreator note: This file will be REGENERATED on each build.
- */
 package com.qianyunyi.rider.init;
 
 import net.minecraftforge.registries.RegistryObject;
@@ -261,6 +257,4 @@ public class KamenRiderInterwovenWorldsModItems {
 	public static final RegistryObject<Item> BAGUNDADA = REGISTRY.register("bagundada", () -> new BagundadaItem());
 	public static final RegistryObject<Item> GUZEPA = REGISTRY.register("guzepa", () -> new GuzepaItem());
 	public static final RegistryObject<Item> DODOZO = REGISTRY.register("dodozo", () -> new DodozoItem());
-	// Start of user code block custom items
-	// End of user code block custom items
 }

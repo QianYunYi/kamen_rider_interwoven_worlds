@@ -18,6 +18,5 @@ public class KamenRiderInterwovenWorldsModBlocks {
 	public static final DeferredRegister<Block> REGISTRY = DeferredRegister.create(ForgeRegistries.BLOCKS, KamenRiderInterwovenWorldsMod.MODID);
 	public static final RegistryObject<Block> SHOCKER_OPERATING_TABLE = REGISTRY.register("shocker_operating_table", () -> new ShockerOperatingTableBlock());
 	public static final RegistryObject<Block> KUUGA_SARCOPHAGUS = REGISTRY.register("kuuga_sarcophagus", () -> new KuugaSarcophagusBlock());
-	// Start of user code block custom blocks
-	// End of user code block custom blocks
+
 }
