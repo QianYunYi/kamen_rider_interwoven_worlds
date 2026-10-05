@@ -1,0 +1,6 @@
+{
+  "parent": "rider_adventure_affiliated:displaysettings/petrify_arcle",
+  "textures": {
+    "layer0": "rider_adventure_affiliated:items/petrify_arcle"
+  }
+}

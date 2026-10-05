@@ -1,0 +1,7 @@
+
+{
+  "parent": "kamen_rider_interwoven_worlds:displaysettings/kuuga_sarcophagus",
+  "textures": {
+    "particle": "kamen_rider_interwoven_worlds:block/kuuga_sarcophagus"
+  }
+}

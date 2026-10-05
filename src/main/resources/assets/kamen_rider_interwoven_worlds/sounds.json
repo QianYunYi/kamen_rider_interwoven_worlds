@@ -1,0 +1,426 @@
+{
+  "standby_arcle": {
+    "sounds": [
+      {
+        "name": "kamen_rider_interwoven_worlds:rider/kuuga/standby_arcle",
+        "stream": false
+      }
+    ]
+  },
+  "shocker_cry": {
+    "sounds": [
+      {
+        "name": "kamen_rider_interwoven_worlds:kaijin/shocker/shocker_cry",
+        "stream": false
+      }
+    ]
+  },
+  "pegasus_bowgun_shoot": {
+    "sounds": [
+      {
+        "name": "kamen_rider_interwoven_worlds:rider/kuuga/form/pegasus/pegasus_bowgun_shoot",
+        "stream": false
+      }
+    ]
+  },
+  "pegasus_bowgun_load": {
+    "sounds": [
+      {
+        "name": "kamen_rider_interwoven_worlds:rider/kuuga/form/pegasus/pegasus_bowgun_load",
+        "stream": false
+      }
+    ]
+  },
+  "pegasus_bowgun_charge": {
+    "sounds": [
+      {
+        "name": "kamen_rider_interwoven_worlds:rider/kuuga/form/pegasus/pegasus_bowgun_charge",
+        "stream": false
+      }
+    ]
+  },
+  "kuuga_titan_form": {
+    "sounds": [
+      {
+        "name": "kamen_rider_interwoven_worlds:rider/kuuga/form/titan/kuuga_titan_form",
+        "stream": false
+      }
+    ]
+  },
+  "kuuga_rising_ultimate_dark_eyes": {
+    "sounds": [
+      {
+        "name": "kamen_rider_interwoven_worlds:rider/kuuga/form/rising_ultimate/kuuga_rising_ultimate_dark_eyes",
+        "stream": false
+      }
+    ]
+  },
+  "kuuga_rising_ultimate": {
+    "sounds": [
+      {
+        "name": "kamen_rider_interwoven_worlds:rider/kuuga/form/rising_ultimate/kuuga_rising_ultimate",
+        "stream": false
+      }
+    ]
+  },
+  "kuuga_rising_titan": {
+    "sounds": [
+      {
+        "name": "kamen_rider_interwoven_worlds:rider/kuuga/form/rising_titan/kuuga_rising_titan",
+        "stream": false
+      }
+    ]
+  },
+  "kuuga_pegasus_form": {
+    "sounds": [
+      {
+        "name": "kamen_rider_interwoven_worlds:rider/kuuga/form/pegasus/kuuga_pegasus_form",
+        "stream": false
+      }
+    ]
+  },
+  "kuuga_rising_mighty": {
+    "sounds": [
+      {
+        "name": "kamen_rider_interwoven_worlds:rider/kuuga/form/rising_mighty/kuuga_rising_mighty",
+        "stream": false
+      }
+    ]
+  },
+  "kuuga_rising_dragon": {
+    "sounds": [
+      {
+        "name": "kamen_rider_interwoven_worlds:rider/kuuga/form/rising_dragon/kuuga_rising_dragon",
+        "stream": false
+      }
+    ]
+  },
+  "kuuga_mighty_form": {
+    "sounds": [
+      {
+        "name": "kamen_rider_interwoven_worlds:rider/kuuga/form/mighty/kuuga_mighty_form",
+        "stream": false
+      }
+    ]
+  },
+  "kuuga_henshin_kaijo": {
+    "sounds": [
+      {
+        "name": "kamen_rider_interwoven_worlds:rider/kuuga/kuuga_henshin_kaijo",
+        "stream": false
+      }
+    ]
+  },
+  "kuuga_dragon_form": {
+    "sounds": [
+      {
+        "name": "kamen_rider_interwoven_worlds:rider/kuuga/form/dragon/kuuga_dragon_form",
+        "stream": false
+      }
+    ]
+  },
+  "kuuga_amazing_mighty": {
+    "sounds": [
+      {
+        "name": "kamen_rider_interwoven_worlds:rider/kuuga/form/amazing_mighty/kuuga_amazing_mighty",
+        "stream": false
+      }
+    ]
+  },
+  "killed_by_daguba": {
+    "sounds": [
+      {
+        "name": "kamen_rider_interwoven_worlds:kaijin/gurongi/killed_by_daguba",
+        "stream": false
+      }
+    ]
+  },
+  "the_joker_of_the_devil": {
+    "sounds": [
+      {
+        "name": "kamen_rider_interwoven_worlds:ju_chi_jun_fu__-_e_mo_noziyotukainsutourumentaruiijia_mian_raidaamazon",
+        "stream": false
+      }
+    ]
+  },
+  "sss_shock_shocker_shoc": {
+    "sounds": [
+      {
+        "name": "kamen_rider_interwoven_worlds:jia_mian_raidagirls_jia_mian_qi_shi_girls_-_sss_shock_shocker_shoc",
+        "stream": false
+      }
+    ]
+  },
+  "earthquake": {
+    "sounds": [
+      {
+        "name": "kamen_rider_interwoven_worlds:earthquake",
+        "stream": false
+      }
+    ]
+  },
+  "daguba_laughter": {
+    "sounds": [
+      {
+        "name": "kamen_rider_interwoven_worlds:kaijin/gurongi/daguba_laughter",
+        "stream": false
+      }
+    ]
+  },
+  "daguba_arrival": {
+    "sounds": [
+      {
+        "name": "kamen_rider_interwoven_worlds:kaijin/gurongi/daguba_arrival",
+        "stream": false
+      }
+    ]
+  },
+  "current": {
+    "sounds": [
+      {
+        "name": "kamen_rider_interwoven_worlds:current",
+        "stream": false
+      }
+    ]
+  },
+  "cracked_stone": {
+    "sounds": [
+      {
+        "name": "kamen_rider_interwoven_worlds:cracked_stone",
+        "stream": false
+      }
+    ]
+  },
+  "change_ultimate": {
+    "sounds": [
+      {
+        "name": "kamen_rider_interwoven_worlds:rider/kuuga/form/ultimate/change_ultimate",
+        "stream": false
+      }
+    ]
+  },
+  "kuuga_rising_pegasus": {
+    "sounds": [
+      {
+        "name": "kamen_rider_interwoven_worlds:rider/kuuga/form/rising_pegasus/kuuga_rising_pegasus",
+        "stream": false
+      }
+    ]
+  },
+  "front_part_pegasus_ability": {
+    "sounds": [
+      {
+        "name": "kamen_rider_interwoven_worlds:rider/kuuga/form/pegasus/front_part_pegasus_ability",
+        "stream": false
+      }
+    ]
+  },
+  "gouram_fly": {
+    "sounds": [
+      {
+        "name": "kamen_rider_interwoven_worlds:rider/gouram/gouram_fly",
+        "stream": false
+      }
+    ]
+  },
+  "kuuga_unform": {
+    "sounds": [
+      {
+        "name": "kamen_rider_interwoven_worlds:rider/kuuga/kuuga_unform",
+        "stream": false
+      }
+    ]
+  },
+  "kuuga_unform_rising": {
+    "sounds": [
+      {
+        "name": "kamen_rider_interwoven_worlds:rider/kuuga/kuuga_unform_rising",
+        "stream": false
+      }
+    ]
+  },
+  "punch": {
+    "sounds": [
+      {
+        "name": "kamen_rider_interwoven_worlds:rider/kuuga/skill/punch",
+        "stream": false
+      }
+    ]
+  },
+  "punch_henshin_1": {
+    "sounds": [
+      {
+        "name": "kamen_rider_interwoven_worlds:rider/kuuga/form/growing/punch_henshin_1",
+        "stream": false
+      }
+    ]
+  },
+  "punch_henshin_2": {
+    "sounds": [
+      {
+        "name": "kamen_rider_interwoven_worlds:rider/kuuga/form/growing/punch_henshin_2",
+        "stream": false
+      }
+    ]
+  },
+  "jump_dragon": {
+    "sounds": [
+      {
+        "name": "kamen_rider_interwoven_worlds:rider/kuuga/form/dragon/jump_dragon",
+        "stream": false
+      }
+    ]
+  },
+  "growing_henshin": {
+    "sounds": [
+      {
+        "name": "kamen_rider_interwoven_worlds:rider/kuuga/form/growing/growing_henshin",
+        "stream": false
+      }
+    ]
+  },
+  "final_explode": {
+    "sounds": [
+      {
+        "name": "kamen_rider_interwoven_worlds:rider/kuuga/skill/final_explode",
+        "stream": false
+      }
+    ]
+  },
+  "imortal_grongi_growing_form": {
+    "sounds": [
+      {
+        "name": "kamen_rider_interwoven_worlds:imortal_grongi_growing_form",
+        "stream": false
+      }
+    ]
+  },
+  "normal_explosion": {
+    "sounds": [
+      {
+        "name": "kamen_rider_interwoven_worlds:rider/kuuga/skill/normal_explosion",
+        "stream": false
+      }
+    ]
+  },
+  "titan_ability": {
+    "sounds": [
+      {
+        "name": "kamen_rider_interwoven_worlds:rider/kuuga/form/titan/titan_ability",
+        "stream": false
+      }
+    ]
+  },
+  "open_titan_sword": {
+    "sounds": [
+      {
+        "name": "kamen_rider_interwoven_worlds:rider/kuuga/form/titan/open_titan_sword",
+        "stream": false
+      }
+    ]
+  },
+  "rising_calamiti_step": {
+    "sounds": [
+      {
+        "name": "kamen_rider_interwoven_worlds:rider/kuuga/form/titan/rising_calamiti_step",
+        "stream": false
+      }
+    ]
+  },
+  "titan_calamiti": {
+    "sounds": [
+      {
+        "name": "kamen_rider_interwoven_worlds:rider/kuuga/form/titan/titan_calamiti",
+        "stream": false
+      }
+    ]
+  },
+  "titan_foyla": {
+    "sounds": [
+      {
+        "name": "kamen_rider_interwoven_worlds:rider/kuuga/form/titan/titan_foyla",
+        "stream": false
+      }
+    ]
+  },
+  "ability_change_or_light_attak": {
+    "sounds": [
+      {
+        "name": "kamen_rider_interwoven_worlds:rider/kuuga/form/titan/ability_change_or_light_attak",
+        "stream": false
+      }
+    ]
+  },
+  "bowgun_actifing": {
+    "sounds": [
+      {
+        "name": "kamen_rider_interwoven_worlds:rider/kuuga/form/pegasus/bowgun_actifing",
+        "stream": false
+      }
+    ]
+  },
+  "dragon_rod_foyla": {
+    "sounds": [
+      {
+        "name": "kamen_rider_interwoven_worlds:rider/kuuga/form/dragon/dragon_rod_foyla",
+        "stream": false
+      }
+    ]
+  },
+  "dragon_rod_open": {
+    "sounds": [
+      {
+        "name": "kamen_rider_interwoven_worlds:rider/kuuga/form/dragon/dragon_rod_open",
+        "stream": false
+      }
+    ]
+  },
+  "rod_dragon_strike": {
+    "sounds": [
+      {
+        "name": "kamen_rider_interwoven_worlds:rider/kuuga/form/dragon/rod_dragon_strike",
+        "stream": false
+      }
+    ]
+  },
+  "titan_sword_standard_attack": {
+    "sounds": [
+      {
+        "name": "kamen_rider_interwoven_worlds:rider/kuuga/form/titan/titan_sword_standard_attack",
+        "stream": false
+      }
+    ]
+  },
+  "twin_titan_rising_sword": {
+    "sounds": [
+      {
+        "name": "kamen_rider_interwoven_worlds:rider/kuuga/form/titan/twin_titan_rising_sword",
+        "stream": false
+      }
+    ]
+  },
+  "kuuga_after_hisatsu_effect": {
+    "sounds": [
+      {
+        "name": "kamen_rider_interwoven_worlds:rider/kuuga/skill/kuuga_after_hisatsu_effect",
+        "stream": false
+      }
+    ]
+  },
+  "pegasus_hisatsu": {
+    "sounds": [
+      {
+        "name": "kamen_rider_interwoven_worlds:rider/kuuga/form/pegasus/pegasus_hisatsu",
+        "stream": false
+      }
+    ]
+  },
+  "rider_kick_start": {
+    "sounds": [
+      {
+        "name": "kamen_rider_interwoven_worlds:rider/kuuga/skill/rider_kick_start",
+        "stream": false
+      }
+    ]
+  }
+}

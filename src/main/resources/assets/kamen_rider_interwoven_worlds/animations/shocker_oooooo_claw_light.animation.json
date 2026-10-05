@@ -1,0 +1,1 @@
+{"format_version":"1.8.0","animations":{"idle":{"animation_length":2,"bones":{"bone":{"scale":{"0.0":{"vector":[0,0,0]},"0.1667":{"vector":[1,1,0],"easing":"easeInBack"},"0.25":{"vector":[1,1,1]},"1.9167":{"vector":[1,1,1]},"1.9583":{"vector":[1,1,0],"easing":"easeInBack"},"2.0":{"vector":[0,0,0]}}}}}},"geckolib_format_version":2}

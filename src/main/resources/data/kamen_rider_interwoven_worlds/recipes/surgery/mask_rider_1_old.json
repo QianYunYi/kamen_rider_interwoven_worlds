@@ -1,0 +1,19 @@
+{
+  "type": "kamen_rider_interwoven_worlds:surgery",
+  "surgery_type": "rider_system",
+  "duration": 400,
+  "ordered": true,
+  "blueprint": {
+    "item": "kamen_rider_interwoven_worlds:mask_rider_1_old_modified_drawings"
+  },
+  "materials": [
+    { "slot": 0, "item": "kamen_rider_interwoven_worlds:mask_rider_1_old_helmet_modified_part", "count": 1 },
+    { "slot": 1, "item": "kamen_rider_interwoven_worlds:mask_rider_1_old_chestplate_modified_part", "count": 1 },
+    { "slot": 2, "item": "kamen_rider_interwoven_worlds:mask_rider_1_old_boots_modified_part", "count": 1 },
+    { "slot": 3, "item": "kamen_rider_interwoven_worlds:typhoon_modified_part", "count": 1 }
+  ],
+  "result": {
+    "item": "kamen_rider_interwoven_worlds:mask_rider_1_old_helmet",
+    "count": 1
+  }
+}

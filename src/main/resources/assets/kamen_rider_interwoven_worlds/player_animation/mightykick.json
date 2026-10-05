@@ -1,0 +1,43 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"mightykick": {
+			"loop": true,
+			"bones": {
+				"body": {
+					"rotation": {
+						"vector": [-37.5, 0, 0]
+					}
+				},
+				"head": {
+					"rotation": {
+						"vector": [47.5, 0, 0]
+					}
+				},
+				"right_arm": {
+					"rotation": {
+						"vector": [0, 0, 42.5]
+					}
+				},
+				"left_arm": {
+					"rotation": {
+						"vector": [-42.5, 0, -45]
+					}
+				},
+				"right_leg": {
+					"rotation": {
+						"vector": [-32.5, 0, 0]
+					}
+				},
+				"left_leg": {
+					"rotation": {
+						"vector": [12.5, 0, 0]
+					},
+					"position": {
+						"vector": [0, 3, -4]
+					}
+				}
+			}
+		}
+	}
+}

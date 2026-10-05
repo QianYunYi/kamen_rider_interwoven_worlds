@@ -1,0 +1,7 @@
+
+{
+  "parent": "kamen_rider_interwoven_worlds:displaysettings/shocker_operating_table",
+  "textures": {
+    "particle": "kamen_rider_interwoven_worlds:block/shocker_operating_table"
+  }
+}

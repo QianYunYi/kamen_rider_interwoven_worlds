@@ -1,0 +1,21 @@
+{
+  "targets": [ "swap" ],
+  "passes": [
+    {
+      "name": "kamen_rider_interwoven_worlds:comic_black_white",
+      "intarget": "minecraft:main",
+      "outtarget": "swap",
+      "auxtargets": [
+        { "name": "DiffuseSampler", "id": "minecraft:main" }
+      ],
+      "uniforms": [
+        { "name": "Threshold", "values": [ 0.5 ] }
+      ]
+    },
+    {
+      "name": "blit",
+      "intarget": "swap",
+      "outtarget": "minecraft:main"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "targets": [ "swap" ],
+  "passes": [
+    {
+      "name": "kamen_rider_interwoven_worlds:supernatural_scan",
+      "intarget": "minecraft:main",
+      "outtarget": "swap",
+      "auxtargets": [
+        { "name": "DiffuseSampler", "id": "minecraft:main" }
+      ],
+      "uniforms": [
+        { "name": "ScanCenterX", "values": [ 0.5 ] },
+        { "name": "ScanCenterY", "values": [ 0.5 ] },
+        { "name": "ScanRadius", "values": [ 0.0 ] },
+        { "name": "ScanIntensity", "values": [ 0.0 ] }
+      ]
+    },
+    {
+      "name": "blit",
+      "intarget": "swap",
+      "outtarget": "minecraft:main"
+    }
+  ]
+}

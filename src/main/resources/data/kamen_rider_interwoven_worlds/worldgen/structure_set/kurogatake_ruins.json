@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "kamen_rider_interwoven_worlds:kurogatake_ruins",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "salt": 374859261,
+    "spacing": 32,
+    "separation": 16
+  }
+}

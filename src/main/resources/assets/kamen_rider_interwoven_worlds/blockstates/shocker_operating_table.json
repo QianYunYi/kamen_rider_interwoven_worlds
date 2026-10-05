@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "kamen_rider_interwoven_worlds:custom/shocker_operating_table_particle"
+    },
+    "facing=east": {
+      "model": "kamen_rider_interwoven_worlds:custom/shocker_operating_table_particle",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "kamen_rider_interwoven_worlds:custom/shocker_operating_table_particle",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "kamen_rider_interwoven_worlds:custom/shocker_operating_table_particle",
+      "y": 270
+    }
+  }
+}

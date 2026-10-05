@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Gradle Imported" enabled="true">
+        <outputRelativeToContentRoot value="true" />
+        <option name="mixin.debug.export" value="true" />
+        <option name="mixin.refmap.config" value="mixins.kamen_rider_interwoven_worlds.refmap.json" />
+        <processorPath useClasspath="false">
+          <entry name="$USER_HOME$/.mcreator/gradle/caches/modules-2/files-2.1/org.spongepowered/mixin/0.8.5/6d1c8bf4c28e697f472a83bd6add76ec4951734/mixin-0.8.5-processor.jar" />
+          <entry name="$USER_HOME$/.mcreator/gradle/caches/modules-2/files-2.1/io.github.llamalad7/mixinextras-common/0.2.0/3f26dd587b7c6d803647a4ad3b66ce5cea1835e6/mixinextras-common-0.2.0.jar" />
+        </processorPath>
+        <module name="kamen_rider_interwoven_worlds.main" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel target="17" />
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="kamen_rider_interwoven_worlds.main" options="-Amixin.debug.export=true -Amixin.refmap.config=mixins.kamen_rider_interwoven_worlds.refmap.json -Xlint:-removal -Xlint:-deprecation" />
+    </option>
+  </component>
+</project>

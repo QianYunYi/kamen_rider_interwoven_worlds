@@ -1,0 +1,33 @@
+{
+  "targets": [
+    "swap"
+  ],
+  "passes": [
+    {
+      "name": "white_screen",
+      "intarget": "minecraft:main",
+      "outtarget": "swap",
+      "auxtargets": [
+        {
+          "name": "PrevSampler",
+          "id": "minecraft:main"
+        }
+      ],
+      "uniforms": [
+        {
+          "name": "Intensity",
+          "values": [ 0.0 ]
+        },
+        {
+          "name": "Progress",
+          "values": [ 0.0 ]
+        }
+      ]
+    },
+    {
+      "name": "blit",
+      "intarget": "swap",
+      "outtarget": "minecraft:main"
+    }
+  ]
+}

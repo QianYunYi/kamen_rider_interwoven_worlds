@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "kamen_rider_interwoven_worlds:item/shocker_saber"
+  }
+}

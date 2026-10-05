@@ -1,0 +1,15 @@
+{
+  "name": "kamen_rider_interwoven_worlds:kurogatake_ruins_underground_pool",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "kamen_rider_interwoven_worlds:kurogatake_ruins_underground",
+        "processors": [],
+        "projection": "rigid"
+      }
+    }
+  ]
+}

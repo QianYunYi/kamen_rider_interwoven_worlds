@@ -1,0 +1,6 @@
+{
+  "parent": "kamen_rider_interwoven_worlds:displaysettings/rising_dragon_wand",
+  "textures": {
+    "layer0": "kamen_rider_interwoven_worlds:item/rising_dragon_wand"
+  }
+}

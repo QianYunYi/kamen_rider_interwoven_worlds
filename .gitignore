@@ -1,0 +1,32 @@
+# Gradle
+.gradle/
+build/
+
+# IDE
+.idea/
+*.iml
+out/
+
+# Eclipse
+.classpath
+.project
+.settings/
+bin/
+
+# Minecraft
+run/
+run-data/
+mcmodsrepo/
+
+# Log
+logs/
+*.log
+hs_err_pid*
+replay_pid*
+
+# Local libs: 只忽略 jar 的解压产物目录，保留 jar 本身
+libs/*/
+
+# OS
+.DS_Store
+Thumbs.db

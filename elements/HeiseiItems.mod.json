@@ -1,0 +1,11 @@
+{
+  "_fv": 73,
+  "_type": "tab",
+  "definition": {
+    "name": "Heisei Items",
+    "icon": {
+      "value": "CUSTOM:PetrifyArcleItem"
+    },
+    "showSearch": false
+  }
+}

@@ -1,0 +1,119 @@
+{
+  "credit": "Made with Blockbench",
+  "parent": "builtin/entity",
+  "texture_size": [
+    1024,
+    1024
+  ],
+  "display": {
+    "thirdperson_righthand": {
+      "rotation": [
+        -55,
+        0,
+        0
+      ],
+      "translation": [
+        -0.75,
+        0,
+        1.25
+      ],
+      "scale": [
+        0.17,
+        0.17,
+        0.17
+      ]
+    },
+    "thirdperson_lefthand": {
+      "rotation": [
+        -55,
+        0,
+        0
+      ],
+      "translation": [
+        1,
+        0,
+        1.25
+      ],
+      "scale": [
+        0.17,
+        0.17,
+        0.17
+      ]
+    },
+    "firstperson_righthand": {
+      "rotation": [
+        32,
+        -172,
+        -16
+      ],
+      "translation": [
+        2.25,
+        4.75,
+        -3.75
+      ],
+      "scale": [
+        0.34,
+        0.34,
+        0.34
+      ]
+    },
+    "firstperson_lefthand": {
+      "rotation": [
+        32,
+        -172,
+        -16
+      ],
+      "translation": [
+        0.5,
+        4.75,
+        -3.75
+      ],
+      "scale": [
+        0.34,
+        0.34,
+        0.34
+      ]
+    },
+    "ground": {
+      "scale": [
+        0.65,
+        0.65,
+        0.65
+      ]
+    },
+    "gui": {
+      "rotation": [
+        60,
+        -180,
+        0
+      ],
+      "translation": [
+        2.75,
+        0.75,
+        0
+      ],
+      "scale": [
+        0.49,
+        0.49,
+        0.49
+      ]
+    },
+    "head": {
+      "translation": [
+        -5.75,
+        0,
+        0
+      ]
+    },
+    "fixed": {
+      "translation": [
+        -6.75,
+        0,
+        0
+      ]
+    }
+  },
+  "textures": {
+    "particle": "item/kuuga_sarcophagus"
+  }
+}
