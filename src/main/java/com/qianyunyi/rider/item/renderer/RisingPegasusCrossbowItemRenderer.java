@@ -29,7 +29,7 @@ public class RisingPegasusCrossbowItemRenderer extends GeoItemRenderer<RisingPeg
 
 	@Override
 	public RenderType getRenderType(RisingPegasusCrossbowItem animatable, ResourceLocation texture, MultiBufferSource bufferSource, float partialTick) {
-		return RenderType.entityTranslucent(getTextureLocation(animatable));
+		return RenderType.entityTranslucent(texture);
 	}
 
 	private static final float SCALE_RECIPROCAL = 1.0f / 16.0f;

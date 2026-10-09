@@ -26,7 +26,7 @@ public class StandbyStateHandler implements HenshinStateHandler {
         RiderAssertions.notNull(formConfig, "形态配置不能为空");
 
         if (isCrouching) {
-            formConfig.getBehavior().handleDeactivation(serverPlayer, riderConfig, formConfig);
+            formConfig.getBehavior().handleUnForm(serverPlayer, riderConfig, formConfig);
         } else {
             formConfig.getBehavior().handleHenshin(serverPlayer, riderConfig, formConfig);
         }

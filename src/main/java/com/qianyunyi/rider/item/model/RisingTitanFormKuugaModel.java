@@ -19,6 +19,6 @@ public class RisingTitanFormKuugaModel extends GeoModel<RisingTitanFormKuugaItem
 
 	@Override
 	public ResourceLocation getTextureResource(RisingTitanFormKuugaItem object) {
-		return new ResourceLocation("kamen_rider_interwoven_worlds", "textures/item/rising_titan_form_kuuga.png");
+		return new ResourceLocation("kamen_rider_interwoven_worlds", "textures/armor/rising_titan_form_kuuga.png");
 	}
 }

@@ -19,6 +19,6 @@ public class FullBodyRestraintsModel extends GeoModel<FullBodyRestraintsItem> {
 
 	@Override
 	public ResourceLocation getTextureResource(FullBodyRestraintsItem object) {
-		return new ResourceLocation("kamen_rider_interwoven_worlds", "textures/item/full_body_restraints.png");
+		return new ResourceLocation("kamen_rider_interwoven_worlds", "textures/armor/full_body_restraints.png");
 	}
 }

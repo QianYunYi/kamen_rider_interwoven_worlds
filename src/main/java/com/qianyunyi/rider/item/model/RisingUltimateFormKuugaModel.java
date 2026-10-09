@@ -19,6 +19,6 @@ public class RisingUltimateFormKuugaModel extends GeoModel<RisingUltimateFormKuu
 
 	@Override
 	public ResourceLocation getTextureResource(RisingUltimateFormKuugaItem object) {
-		return new ResourceLocation("kamen_rider_interwoven_worlds", "textures/item/rising_ultimate_form_kuuga.png");
+		return new ResourceLocation("kamen_rider_interwoven_worlds", "textures/armor/rising_ultimate_form_kuuga.png");
 	}
 }

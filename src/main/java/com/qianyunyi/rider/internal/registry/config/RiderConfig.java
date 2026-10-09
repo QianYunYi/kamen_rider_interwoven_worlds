@@ -81,7 +81,7 @@ public class RiderConfig {
      * 处理解除变身
      */
     public void handleDeactivation(ServerPlayer player) {
-        getCurrentForm(player).getBehavior().handleDeactivation(player, this, getCurrentForm(player));
+        getCurrentForm(player).getBehavior().handleUnForm(player, this, getCurrentForm(player));
     }
 
     // ==================== Getter 方法 ====================

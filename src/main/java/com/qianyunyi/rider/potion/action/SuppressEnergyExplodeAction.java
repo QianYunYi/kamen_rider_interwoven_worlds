@@ -56,9 +56,6 @@ public class SuppressEnergyExplodeAction {
         entity.getPersistentData().remove("is_explosive");
         entity.getPersistentData().putBoolean("is_exploding", true);
 
-        // 恢复血量至1，防止 isDeadOrDying() 导致后续伤害被跳过
-        livingEntity.setHealth(1.0f);
-
         //给予不可移动效果
         livingEntity.addEffect(new MobEffectInstance(KamenRiderInterwovenWorldsModMobEffects.MOVEMENT_LOCK.get(), 200, 0, false, false));
         // 爆炸期间无敌并停止AI，防止提前死亡或乱动

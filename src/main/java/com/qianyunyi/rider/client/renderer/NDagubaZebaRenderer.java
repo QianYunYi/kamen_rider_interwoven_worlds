@@ -23,7 +23,7 @@ public class NDagubaZebaRenderer extends GeoEntityRenderer<NDagubaZebaEntity> {
 
 	@Override
 	public RenderType getRenderType(NDagubaZebaEntity animatable, ResourceLocation texture, MultiBufferSource bufferSource, float partialTick) {
-		return RenderType.entityTranslucent(getTextureLocation(animatable));
+		return RenderType.entityTranslucent(texture);
 	}
 
 	@Override

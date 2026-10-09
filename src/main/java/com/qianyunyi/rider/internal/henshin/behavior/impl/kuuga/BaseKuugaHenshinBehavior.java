@@ -60,11 +60,11 @@ public class BaseKuugaHenshinBehavior extends BaseHenshinBehavior {
 
         NetworkHandler.sendToPlayer(new HUDControlMessage(config.getRiderName(), form.getFormName(), true), player);
 
-        handleDeactivation(player, config, form);
+        this.handleUnForm(player, config, form);
     }
 
     @Override
-    public void handleQuickTransformation(ServerPlayer player, RiderConfig config, FormConfig form) {
+    public void handleQuickHenshin(ServerPlayer player, RiderConfig config, FormConfig form) {
         RiderPlayerData data = RiderPlayerVariablesProvider.get(player);
         CompoundTag standby = HenshinUtil.getStandbyGear(player);
         CompoundTag active  = HenshinUtil.getActiveGear(player);
@@ -101,7 +101,7 @@ public class BaseKuugaHenshinBehavior extends BaseHenshinBehavior {
     }
 
     @Override
-    public void handleDeactivation(ServerPlayer player, RiderConfig config, FormConfig form) {
+    public void handleUnForm(ServerPlayer player, RiderConfig config, FormConfig form) {
         RiderPlayerData data = RiderPlayerVariablesProvider.get(player);
         if (data.getCurrentState() == HenshinState.STANDBY) return;
 

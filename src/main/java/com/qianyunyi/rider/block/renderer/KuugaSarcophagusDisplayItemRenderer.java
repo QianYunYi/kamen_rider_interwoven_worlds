@@ -16,6 +16,6 @@ public class KuugaSarcophagusDisplayItemRenderer extends GeoItemRenderer<KuugaSa
 
 	@Override
 	public RenderType getRenderType(KuugaSarcophagusDisplayItem animatable, ResourceLocation texture, MultiBufferSource bufferSource, float partialTick) {
-		return RenderType.entityTranslucent(getTextureLocation(animatable));
+		return RenderType.entityTranslucent(texture);
 	}
 }

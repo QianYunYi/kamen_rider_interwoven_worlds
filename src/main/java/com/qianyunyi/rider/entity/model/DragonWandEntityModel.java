@@ -17,6 +17,6 @@ public class DragonWandEntityModel extends GeoModel<DragonWandEntity> {
 
     @Override
     public ResourceLocation getTextureResource(DragonWandEntity animatable) {
-        return new ResourceLocation("kamen_rider_interwoven_worlds", "textures/item/dragon_wand.png");
+        return new ResourceLocation("kamen_rider_interwoven_worlds", "textures/item/geo/dragon_wand.png");
     }
 }

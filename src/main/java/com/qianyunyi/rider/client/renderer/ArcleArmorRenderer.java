@@ -1,6 +1,7 @@
 package com.qianyunyi.rider.client.renderer;
 
 import net.minecraft.nbt.CompoundTag;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.item.ItemStack;
 import software.bernie.geckolib.cache.object.GeoBone;
@@ -10,8 +11,23 @@ import com.qianyunyi.rider.item.ArcleItem;
 
 public class ArcleArmorRenderer extends BaseKuugaArmorRenderer<ArcleItem> {
 
+    public static final ResourceLocation NORMAL_TEXTURE = ResourceLocation.fromNamespaceAndPath("kamen_rider_interwoven_worlds", "textures/armor/arcle.png");
+    public static final ResourceLocation PETRIFY_TEXTURE = ResourceLocation.fromNamespaceAndPath("kamen_rider_interwoven_worlds", "textures/armor/petrify_arcle.png");
+
     public ArcleArmorRenderer() {
         super(new ArcleModel());
+    }
+
+    @Override
+    public ResourceLocation getTextureLocation(ArcleItem animatable) {
+        ItemStack stack = getCurrentStack();
+        if (stack != null && !stack.isEmpty()) {
+            CompoundTag tag = stack.getOrCreateTag();
+            if ("petrifyRune".equals(tag.getString("ActiveRune"))) {
+                return PETRIFY_TEXTURE;
+            }
+        }
+        return NORMAL_TEXTURE;
     }
 
     @Override
@@ -36,7 +52,7 @@ public class ArcleArmorRenderer extends BaseKuugaArmorRenderer<ArcleItem> {
             setBoneVisibleByName(boneName, boneName.equals(tag.getString("ActivePanel")));
         }
 
-        String[] rune = {"baseRune", "risingRune"};
+        String[] rune = {"baseRune", "risingRune", "petrifyRune"};
         for (String boneName : rune) {
             setBoneVisibleByName(boneName, boneName.equals(tag.getString("ActiveRune")));
         }

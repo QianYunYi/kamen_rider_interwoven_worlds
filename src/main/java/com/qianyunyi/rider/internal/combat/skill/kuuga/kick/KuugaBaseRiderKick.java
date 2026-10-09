@@ -11,7 +11,6 @@ import com.qianyunyi.rider.network.packet.AnimationMessage;
 import com.qianyunyi.rider.network.packet.CameraPerspectiveSyncMessage;
 import com.qianyunyi.rider.network.packet.ScreenShakeSyncMessage;
 import com.qianyunyi.rider.internal.registry.damage.damagesource.PlayerLightningDamageSource;
-import com.qianyunyi.rider.potion.action.SuppressEnergyExplodeAction;
 import com.qianyunyi.rider.util.DelayedTask;
 import com.qianyunyi.rider.util.HenshinUtil;
 import com.qianyunyi.rider.util.RiderCompanionUtil;
@@ -327,10 +326,9 @@ public abstract class KuugaBaseRiderKick implements IRiderSkill {
         });
     }
 
-    /** 应用多段伤害（爆炸标记与伤害同一时刻给出，消除死亡空窗期） */
+    /** 应用多段伤害 */
     protected void applyMultiHitDamage(ServerPlayer serverPlayer, LivingEntity target,
                                        float totalDamage, float distanceFactor, float suppressEnergy, String formName) {
-        // 在伤害前一刻给出爆炸标记，消除 is_explosive 设置到实际伤害之间的时间窗口
         markAsExplosive(target, serverPlayer, formName);
         float baseDamagePerHit = (totalDamage + suppressEnergy) * HIT_MAGNIFICATION * distanceFactor;
 
@@ -344,17 +342,8 @@ public abstract class KuugaBaseRiderKick implements IRiderSkill {
                 float damageVariation = 1.0f + (random.nextFloat() - 0.5f) * (2 * DAMAGE_VARIATION);
                 float finalDamage = baseDamagePerHit * damageVariation;
 
-                // 爆炸标记实体：限制伤害不致死，保留至少0.5血量
-                // 不依赖 LivingDeathEvent 事件拦截（可能因优先级或模组兼容性失效）
-                boolean isExplosive = target.getPersistentData().getBoolean("is_explosive");
-                if (isExplosive) {
-                    float healthAfterDamage = target.getHealth() - finalDamage;
-                    if (healthAfterDamage <= 0) {
-                        finalDamage = Math.max(target.getHealth() - 0.5f, 0.1f);
-                    }
-                }
-
                 target.invulnerableTime = 0;
+                boolean isExplosive = target.getPersistentData().getBoolean("is_explosive");
                 target.hurt(new PlayerLightningDamageSource(serverPlayer), finalDamage);
 
                 // 播放爆炸音效
@@ -362,15 +351,12 @@ public abstract class KuugaBaseRiderKick implements IRiderSkill {
                         SoundEvents.GENERIC_EXPLODE, SoundSource.PLAYERS,
                         0.5f, 0.9f + random.nextFloat() * 0.2f);
 
-                // 爆炸标记实体：直接触发爆炸流程（不依赖 LivingDeathEvent 事件拦截）
-                // 理由：LivingDeathEvent 的安全网拦截可能因其他模组事件优先级问题失效，
-                // 此处改为在伤害后直接调用 triggerExplosion，由 triggerExplosion 内部
-                // 的 is_exploding 标记防止重复触发，同时 LivingDeathEvent 的安全网保留作冗余保护。
-                if (isExplosive) {
-                    if (!target.isAlive()) {
-                        target.setHealth(0.5f);
-                    }
-                    SuppressEnergyExplodeAction.triggerExplosion(target.level(), target);
+                // 爆炸标记实体：仅通过死亡事件触发爆炸流程
+                // 如果未死亡则播放永生体生长音效
+                if (isExplosive && target.isAlive()) {
+                    serverPlayer.level().playSound(null, target.getX(), target.getY(), target.getZ(),
+                            KamenRiderInterwovenWorldsModSounds.IMORTAL_GRONGI_GROWING_FORM.get(), SoundSource.PLAYERS,
+                            1.0f, 1.0f);
                 }
             });
         }
@@ -383,28 +369,19 @@ public abstract class KuugaBaseRiderKick implements IRiderSkill {
      * 消除各子类重复实现和维护成本。
      */
     protected void applyKickDamage(ServerPlayer serverPlayer, LivingEntity target, float finalDamage) {
-        // 爆炸流程中的实体跳过后续伤害（PlayerLightningDamageSource 可能无视无敌）
         if (target.getPersistentData().getBoolean("is_exploding")) return;
 
         target.invulnerableTime = 0;
-        float healthBefore = target.getHealth();
         boolean isExplosive = target.getPersistentData().getBoolean("is_explosive");
 
-        if (isExplosive) {
-            // 爆炸标记实体：第一刀即触发爆炸
-            // 无论单刀伤害大小，防止多段小伤害累积致死
-            if (finalDamage >= healthBefore) {
-                finalDamage = Math.max(healthBefore - 0.5f, 0.1f);
-            }
-            target.hurt(new PlayerLightningDamageSource(serverPlayer), finalDamage);
-            if (!target.isAlive()) {
-                target.setHealth(0.5f);
-            }
-            serverPlayer.level().playSound(null, serverPlayer.blockPosition(),
-                    KamenRiderInterwovenWorldsModSounds.NORMAL_EXPLOSION.get(), SoundSource.PLAYERS, 1, 1);
-            SuppressEnergyExplodeAction.triggerExplosion(target.level(), target);
-        } else {
-            target.hurt(new PlayerLightningDamageSource(serverPlayer), finalDamage);
+        target.hurt(new PlayerLightningDamageSource(serverPlayer), finalDamage);
+
+        // 爆炸标记实体：仅通过死亡事件触发爆炸流程
+        // 如果未死亡则播放永生体生长音效
+        if (isExplosive && target.isAlive()) {
+            serverPlayer.level().playSound(null, target.getX(), target.getY(), target.getZ(),
+                    KamenRiderInterwovenWorldsModSounds.IMORTAL_GRONGI_GROWING_FORM.get(), SoundSource.PLAYERS,
+                    1.0f, 1.0f);
         }
     }
 

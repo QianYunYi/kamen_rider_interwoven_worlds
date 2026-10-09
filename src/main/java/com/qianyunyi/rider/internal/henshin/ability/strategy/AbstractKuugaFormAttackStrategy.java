@@ -5,7 +5,7 @@ import com.qianyunyi.rider.data.RiderPlayerData;
 import com.qianyunyi.rider.data.RiderPlayerVariablesProvider;
 import com.qianyunyi.rider.data.module.KuugaDataModule;
 import com.qianyunyi.rider.entity.vehicle.gouram.GouramConfig;
-import com.qianyunyi.rider.entity.GouramEntity;
+import com.qianyunyi.rider.entity.vehicle.gouram.GouramEntity;
 import com.qianyunyi.rider.init.KamenRiderInterwovenWorldsModEntities;
 import com.qianyunyi.rider.init.KamenRiderInterwovenWorldsModMobEffects;
 import com.qianyunyi.rider.init.KamenRiderInterwovenWorldsModSounds;

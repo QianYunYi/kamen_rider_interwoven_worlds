@@ -19,6 +19,6 @@ public class UltimatePegasusCrossbowItemModel extends GeoModel<UltimatePegasusCr
 
 	@Override
 	public ResourceLocation getTextureResource(UltimatePegasusCrossbowItem animatable) {
-		return new ResourceLocation("kamen_rider_interwoven_worlds", "textures/item/ultimate_pegasus_crossbow.png");
+		return new ResourceLocation("kamen_rider_interwoven_worlds", "textures/item/geo/ultimate_pegasus_crossbow.png");
 	}
 }

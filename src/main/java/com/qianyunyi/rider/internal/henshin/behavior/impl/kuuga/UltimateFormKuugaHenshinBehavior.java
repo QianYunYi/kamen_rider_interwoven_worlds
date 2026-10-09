@@ -88,8 +88,8 @@ public class UltimateFormKuugaHenshinBehavior extends BaseKuugaHenshinBehavior {
     }
 
     @Override
-    public void handleQuickTransformation(ServerPlayer serverPlayer, RiderConfig config, FormConfig formConfig) {
-        super.handleQuickTransformation(serverPlayer, config, formConfig);
+    public void handleQuickHenshin(ServerPlayer serverPlayer, RiderConfig config, FormConfig formConfig) {
+        super.handleQuickHenshin(serverPlayer, config, formConfig);
     }
 
     /**

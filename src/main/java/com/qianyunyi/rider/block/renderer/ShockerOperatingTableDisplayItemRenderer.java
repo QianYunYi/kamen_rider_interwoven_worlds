@@ -16,6 +16,6 @@ public class ShockerOperatingTableDisplayItemRenderer extends GeoItemRenderer<Sh
 
 	@Override
 	public RenderType getRenderType(ShockerOperatingTableDisplayItem animatable, ResourceLocation texture, MultiBufferSource bufferSource, float partialTick) {
-		return RenderType.entityTranslucent(getTextureLocation(animatable));
+		return RenderType.entityTranslucent(texture);
 	}
 }

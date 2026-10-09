@@ -12,7 +12,7 @@ import net.minecraft.world.entity.player.Player;
 
 import com.qianyunyi.rider.entity.model.BeatChaser2000Model;
 import com.qianyunyi.rider.entity.layer.BeatChaser2000Layer;
-import com.qianyunyi.rider.entity.BeatChaser2000Entity;
+import com.qianyunyi.rider.entity.motoycle.BeatChaser2000Entity;
 
 import com.mojang.blaze3d.vertex.VertexConsumer;
 import com.mojang.blaze3d.vertex.PoseStack;
@@ -30,7 +30,7 @@ public class BeatChaser2000Renderer extends GeoEntityRenderer<BeatChaser2000Enti
 
 	@Override
 	public RenderType getRenderType(BeatChaser2000Entity animatable, ResourceLocation texture, MultiBufferSource bufferSource, float partialTick) {
-		return RenderType.entityTranslucent(getTextureLocation(animatable));
+		return RenderType.entityTranslucent(texture);
 	}
 
 	@Override
@@ -82,6 +82,11 @@ public class BeatChaser2000Renderer extends GeoEntityRenderer<BeatChaser2000Enti
 		}
 
 		poseStack.popPose();
+	}
+
+	@Override
+	public ResourceLocation getTextureLocation(BeatChaser2000Entity animatable) {
+		return this.model.getTextureResource(animatable);
 	}
 
 	@Override

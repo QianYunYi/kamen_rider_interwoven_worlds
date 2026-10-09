@@ -21,7 +21,7 @@ public class DefaultFormSwitchBehavior implements IFormSwitchBehavior {
         }
 
         // 解除当前形态
-        currentForm.getBehavior().handleDeactivation(serverPlayer, riderConfig, currentForm);
+        currentForm.getBehavior().handleUnForm(serverPlayer, riderConfig, currentForm);
 
         // 给予自身隐身效果
         serverPlayer.addEffect(new MobEffectInstance(MobEffects.INVISIBILITY, 60, 1, false, false));
@@ -30,6 +30,6 @@ public class DefaultFormSwitchBehavior implements IFormSwitchBehavior {
         serverPlayer.invulnerableTime = 20;
 
         // 快速变身为目标形态
-        targetForm.getBehavior().handleQuickTransformation(serverPlayer, riderConfig, targetForm);
+        targetForm.getBehavior().handleQuickHenshin(serverPlayer, riderConfig, targetForm);
     }
 }

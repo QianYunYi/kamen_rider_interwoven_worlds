@@ -39,7 +39,7 @@ public interface IHenshinBehavior {
      * @param serverPlayer 执行变身的玩家
      * @param config 骑士配置对象
      */
-    void handleQuickTransformation(ServerPlayer serverPlayer, RiderConfig config, FormConfig formConfig);
+    void handleQuickHenshin(ServerPlayer serverPlayer, RiderConfig config, FormConfig formConfig);
 
     /**
      * 处理解除变身流程
@@ -49,7 +49,7 @@ public interface IHenshinBehavior {
      * @param serverPlayer 执行解除变身的玩家
      * @param config 骑士配置对象
      */
-    void handleDeactivation(ServerPlayer serverPlayer, RiderConfig config, FormConfig formConfig);
+    void handleUnForm(ServerPlayer serverPlayer, RiderConfig config, FormConfig formConfig);
 
     /**
      * 取消变身
@@ -64,5 +64,5 @@ public interface IHenshinBehavior {
      * @param serverPlayer 检查的玩家
      * @return 是否可以变身
      */
-    boolean canTransform(ServerPlayer serverPlayer);
+    boolean canHenshin(ServerPlayer serverPlayer);
 }

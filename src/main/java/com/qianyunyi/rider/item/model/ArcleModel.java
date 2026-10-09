@@ -19,6 +19,6 @@ public class ArcleModel extends GeoModel<ArcleItem> {
 
 	@Override
 	public ResourceLocation getTextureResource(ArcleItem object) {
-		return ResourceLocation.fromNamespaceAndPath("kamen_rider_interwoven_worlds", "textures/item/arcle.png");
+		return ResourceLocation.fromNamespaceAndPath("kamen_rider_interwoven_worlds", "textures/armor/arcle.png");
 	}
 }

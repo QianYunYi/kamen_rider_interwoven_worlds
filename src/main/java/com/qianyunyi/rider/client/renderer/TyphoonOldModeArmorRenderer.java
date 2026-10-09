@@ -25,6 +25,6 @@ public class TyphoonOldModeArmorRenderer extends GeoArmorRenderer<TyphoonOldMode
 
 	@Override
 	public RenderType getRenderType(TyphoonOldModeItem animatable, ResourceLocation texture, MultiBufferSource bufferSource, float partialTick) {
-		return RenderType.entityTranslucent(getTextureLocation(animatable));
+		return RenderType.entityTranslucent(texture);
 	}
 }

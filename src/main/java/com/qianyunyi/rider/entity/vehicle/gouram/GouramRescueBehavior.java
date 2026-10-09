@@ -1,6 +1,5 @@
 package com.qianyunyi.rider.entity.vehicle.gouram;
 
-import com.qianyunyi.rider.entity.GouramEntity;
 import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.entity.LivingEntity;

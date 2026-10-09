@@ -149,6 +149,10 @@ public class PetrifyArcleEquipmentAction {
         // ========== 阶段1：20刻后临时装备石化腰带播放吸收动画 ==========
         TASK_ADDER.accept(DelayedTask.run((ServerLevel) world, 20, lvl -> {
             ItemStack arcleLeg = new ItemStack(KamenRiderInterwovenWorldsModItems.ARCLE_LEGGINGS.get());
+            CompoundTag arcleTag = arcleLeg.getOrCreateTag();
+            arcleTag.putString("ActiveAmadam", "darkAmadam");
+            arcleTag.putString("ActiveRune", "petrifyRune");
+            arcleTag.putString("ActivePanel", "basePanel");
             player.setItemSlot(EquipmentSlot.LEGS, arcleLeg);
             // 1刻延迟设置护甲动画
             TASK_ADDER.accept(DelayedTask.run(lvl, 1, inner -> BaseAnimatedArmorItem.setAnim(arcleLeg, "absorb")));
@@ -257,10 +261,10 @@ public class PetrifyArcleEquipmentAction {
 
         // 解除当前形态
         FormConfig curForm = riderCfg.getForm(data.getActiveFormName());
-        if (curForm != null) curForm.getBehavior().handleDeactivation(player, riderCfg, curForm);
+        if (curForm != null) curForm.getBehavior().handleUnForm(player, riderCfg, curForm);
         // 切初生
         FormConfig baseForm = riderCfg.getForm("base");
-        if (baseForm != null) baseForm.getBehavior().handleQuickTransformation(player, riderCfg, baseForm);
+        if (baseForm != null) baseForm.getBehavior().handleQuickHenshin(player, riderCfg, baseForm);
     }
 
     /**

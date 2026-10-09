@@ -20,7 +20,7 @@ public class GoGadoruBaRenderer extends GeoEntityRenderer<GoGadoruBaEntity> {
 
     @Override
     public RenderType getRenderType(GoGadoruBaEntity animatable, ResourceLocation texture, MultiBufferSource bufferSource, float partialTick) {
-        return RenderType.entityCutoutNoCull(getTextureLocation(animatable));
+        return RenderType.entityCutoutNoCull(texture);
     }
 
     @Override

@@ -47,7 +47,7 @@ public class GrowingFormAttackStrategy extends AbstractKuugaFormAttackStrategy {
         RiderConfig cfg = RiderRegistryHelper.getConfig(data.getActiveRiderName()).orElseThrow();
         FormConfig currentForm = cfg.getForm(data.getActiveFormName());
         if (currentForm != null) {
-            currentForm.getBehavior().handleDeactivation(player, cfg, currentForm);
+            currentForm.getBehavior().handleUnForm(player, cfg, currentForm);
         }
         player.addEffect(new MobEffectInstance(
                 KamenRiderInterwovenWorldsModMobEffects.HENSHIN_CANNOT.get(),

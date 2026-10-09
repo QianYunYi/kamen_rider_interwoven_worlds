@@ -18,7 +18,7 @@ public class BeJiminBaRenderer extends GeoEntityRenderer<BeJiminBaEntity> {
 
     @Override
     public RenderType getRenderType(BeJiminBaEntity animatable, ResourceLocation texture, MultiBufferSource bufferSource, float partialTick) {
-        return RenderType.entityCutoutNoCull(getTextureLocation(animatable));
+        return RenderType.entityCutoutNoCull(texture);
     }
 
     @Override

@@ -167,7 +167,7 @@ public class GrowingKuugaHenshinListener implements IPlayerEventListener {
             DelayedTask.run(serverPlayer.level(), 20, () -> {
                 HenshinUtil.equipHelmetChestplateBootsAndPlayAnimation(serverPlayer,"idle");
                 data.setHenshining(false);
-                baseForm.getBehavior().handleQuickTransformation(serverPlayer, cfg, baseForm);
+                baseForm.getBehavior().handleQuickHenshin(serverPlayer, cfg, baseForm);
                 //注销监听器
                 unregister();
                 this.attackCount = 0;

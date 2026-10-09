@@ -20,7 +20,7 @@ public class ZuGoomaGuRenderer extends GeoEntityRenderer<ZuGoomaGuEntity> {
 
     @Override
     public RenderType getRenderType(ZuGoomaGuEntity animatable, ResourceLocation texture, MultiBufferSource bufferSource, float partialTick) {
-        return RenderType.entityCutoutNoCull(getTextureLocation(animatable));
+        return RenderType.entityCutoutNoCull(texture);
     }
 
     @Override

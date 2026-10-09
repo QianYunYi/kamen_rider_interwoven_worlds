@@ -32,9 +32,9 @@ public abstract class InactiveStateHandler implements HenshinStateHandler {
             if (isCrouching) {
                 if (HenshinUtil.isEquippedArmor(serverPlayer, formConfig.getArmorSet())
                         || manager.isWearingBelt(serverPlayer, config.getRiderName())) {
-                    formConfig.getBehavior().handleDeactivation(serverPlayer, config, formConfig);
+                    formConfig.getBehavior().handleUnForm(serverPlayer, config, formConfig);
                 } else {
-                    formConfig.getBehavior().handleQuickTransformation(serverPlayer, config, formConfig);
+                    formConfig.getBehavior().handleQuickHenshin(serverPlayer, config, formConfig);
                 }
             } else {
                 formConfig.getBehavior().enterStandbyState(serverPlayer, config, formConfig);

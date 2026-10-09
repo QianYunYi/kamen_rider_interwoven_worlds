@@ -39,7 +39,7 @@ public abstract class BaseAnimatedArmorItem extends ArmorItem implements GeoItem
 
     @Override
     public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
-        return "kamen_rider_interwoven_worlds:textures/item/" + this.getMaterial().getName() + ".png";
+        return "kamen_rider_interwoven_worlds:textures/armor/" + this.getMaterial().getName() + ".png";
     }
 
     public static String getAnim(ItemStack stack) {

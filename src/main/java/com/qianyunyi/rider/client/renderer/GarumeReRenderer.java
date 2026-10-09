@@ -20,7 +20,7 @@ public class GarumeReRenderer extends GeoEntityRenderer<GarumeReEntity> {
 
     @Override
     public RenderType getRenderType(GarumeReEntity animatable, ResourceLocation texture, MultiBufferSource bufferSource, float partialTick) {
-        return RenderType.entityCutoutNoCull(getTextureLocation(animatable));
+        return RenderType.entityCutoutNoCull(texture);
     }
 
     @Override

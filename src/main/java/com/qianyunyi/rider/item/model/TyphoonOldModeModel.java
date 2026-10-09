@@ -19,6 +19,6 @@ public class TyphoonOldModeModel extends GeoModel<TyphoonOldModeItem> {
 
 	@Override
 	public ResourceLocation getTextureResource(TyphoonOldModeItem object) {
-		return new ResourceLocation("kamen_rider_interwoven_worlds", "textures/item/typhoon_old_model.png");
+		return new ResourceLocation("kamen_rider_interwoven_worlds", "textures/armor/typhoon_old_model.png");
 	}
 }

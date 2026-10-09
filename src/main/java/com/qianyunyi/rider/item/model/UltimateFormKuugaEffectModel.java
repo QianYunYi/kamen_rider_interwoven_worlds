@@ -19,6 +19,6 @@ public class UltimateFormKuugaEffectModel extends GeoModel<UltimateFormKuugaEffe
 
 	@Override
 	public ResourceLocation getTextureResource(UltimateFormKuugaEffectItem object) {
-		return ResourceLocation.fromNamespaceAndPath("kamen_rider_interwoven_worlds", "textures/item/ultimate_form_kuuga_henshin_effect.png");
+		return ResourceLocation.fromNamespaceAndPath("kamen_rider_interwoven_worlds", "textures/armor/ultimate_form_kuuga_henshin_effect.png");
 	}
 }

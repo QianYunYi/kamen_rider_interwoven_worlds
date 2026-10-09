@@ -76,7 +76,7 @@ public class GrowingFormKuugaHenshinBehavior extends BaseKuugaHenshinBehavior {
     // ==================== 快速变身（覆写：简化装备流程） ====================
 
     @Override
-    public void handleQuickTransformation(ServerPlayer player, RiderConfig config, FormConfig form) {
+    public void handleQuickHenshin(ServerPlayer player, RiderConfig config, FormConfig form) {
         RiderPlayerData data = RiderPlayerVariablesProvider.get(player);
 
         // 若已装备目标装甲，跳过装备流程
@@ -133,7 +133,7 @@ public class GrowingFormKuugaHenshinBehavior extends BaseKuugaHenshinBehavior {
         if (config != null) {
             // 解除当前形态
             FormConfig current = config.getForm(data.getActiveFormName());
-            if (current != null) current.getBehavior().handleDeactivation(player, config, current);
+            if (current != null) current.getBehavior().handleUnForm(player, config, current);
         }
 
         // 已是初生则跳过
@@ -141,7 +141,7 @@ public class GrowingFormKuugaHenshinBehavior extends BaseKuugaHenshinBehavior {
 
         // 切换到初生形态（快速变身模式）
         FormConfig base = config.getForm("base");
-        if (base != null) base.getBehavior().handleQuickTransformation(player, config, base);
+        if (base != null) base.getBehavior().handleQuickHenshin(player, config, base);
     }
 
     // ==================== 私有工具方法（子类特有） ====================

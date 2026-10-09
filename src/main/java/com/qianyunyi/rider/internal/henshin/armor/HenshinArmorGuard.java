@@ -252,7 +252,7 @@ public class HenshinArmorGuard implements IPlayerEventListener {
                                      FormConfig formCfg) {
         DelayedTask.run(serverPlayer.level(), 1, () -> {
                 RiderPlayerData data = RiderPlayerVariablesProvider.get(serverPlayer);
-                formCfg.getBehavior().handleDeactivation(serverPlayer, riderCfg, formCfg);
+                formCfg.getBehavior().handleUnForm(serverPlayer, riderCfg, formCfg);
                 // 强制重置为INACTIVE，避免残留状态导致下次解除时报"未找到骑士配置"
                 data.setCurrentState(HenshinState.INACTIVE);
                 data.setActiveRiderName("");

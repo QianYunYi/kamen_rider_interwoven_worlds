@@ -40,6 +40,6 @@ public class KuugaSarcophagusTileRenderer extends GeoBlockRenderer<KuugaSarcopha
 
 	@Override
 	public RenderType getRenderType(KuugaSarcophagusTileEntity animatable, ResourceLocation texture, MultiBufferSource bufferSource, float partialTick) {
-		return RenderType.entityTranslucent(getTextureLocation(animatable));
+		return RenderType.entityTranslucent(texture);
 	}
 }

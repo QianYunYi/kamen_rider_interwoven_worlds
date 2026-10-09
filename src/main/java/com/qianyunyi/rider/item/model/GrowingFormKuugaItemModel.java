@@ -19,6 +19,6 @@ public class GrowingFormKuugaItemModel extends GeoModel<GrowingFormKuugaItemItem
 
 	@Override
 	public ResourceLocation getTextureResource(GrowingFormKuugaItemItem object) {
-		return ResourceLocation.fromNamespaceAndPath("kamen_rider_interwoven_worlds", "textures/item/growing_form_kuuga.png");
+		return ResourceLocation.fromNamespaceAndPath("kamen_rider_interwoven_worlds", "textures/armor/growing_form_kuuga.png");
 	}
 }

@@ -37,6 +37,6 @@ public class BaseKuugaArmorRenderer<T extends BaseAnimatedArmorItem> extends Geo
 
     @Override
     public RenderType getRenderType(T animatable, ResourceLocation texture, MultiBufferSource bufferSource, float partialTick) {
-        return RenderType.entityTranslucent(getTextureLocation(animatable));
+        return RenderType.entityTranslucent(texture);
     }
 }

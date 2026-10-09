@@ -190,7 +190,7 @@ public class DagubaSummon2Listener implements IPlayerEventListener {
         // 解除当前形态
         FormConfig currentForm = riderConfig.getForm(data.getActiveFormName());
         if (currentForm != null) {
-            currentForm.getBehavior().handleDeactivation(serverPlayer, riderConfig, currentForm);
+            currentForm.getBehavior().handleUnForm(serverPlayer, riderConfig, currentForm);
         }
 
         // 切换为究极空我形态
@@ -209,7 +209,7 @@ public class DagubaSummon2Listener implements IPlayerEventListener {
             RiderConfig cfg = RiderRegistryHelper.getConfig(dataManager.getActiveRiderName()).orElseThrow();
             FormConfig formConfig = cfg.getForm(dataManager.getActiveRiderName());
             if (formConfig != null) {
-                formConfig.getBehavior().handleDeactivation(serverPlayer, cfg, formConfig);
+                formConfig.getBehavior().handleUnForm(serverPlayer, cfg, formConfig);
             }
         }
     }

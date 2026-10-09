@@ -20,7 +20,7 @@ public class ZuZainDaRenderer extends GeoEntityRenderer<ZuZainDaEntity> {
 
     @Override
     public RenderType getRenderType(ZuZainDaEntity animatable, ResourceLocation texture, MultiBufferSource bufferSource, float partialTick) {
-        return RenderType.entityCutoutNoCull(getTextureLocation(animatable));
+        return RenderType.entityCutoutNoCull(texture);
     }
 
     @Override

@@ -124,12 +124,12 @@ dependencies {
     def mixinextrasForge = dependencies.create("io.github.llamalad7:mixinextras-forge:[0.2.0,)")
     jarJar mixinextrasForge
 
-    def geckolib = dependencies.create("software.bernie.geckolib:geckolib-forge-${minecraft_version}:[4.4,5.0)")
-    implementation geckolib
-    jarJar geckolib
+    def geckolibDep = "software.bernie.geckolib:geckolib-forge-${minecraft_version}:4.8.4"
+    implementation fg.deobf(geckolibDep)
+    jarJar geckolibDep
 
     def playerAnim = dependencies.create("dev.kosmx.player-anim:player-animation-lib-forge:[1.0,2.0)")
-    implementation playerAnim
+    implementation fg.deobf(playerAnim)
     jarJar playerAnim
 
     implementation fg.deobf('curse.maven:riderapi-1138346:8020228')

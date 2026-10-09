@@ -4,7 +4,7 @@ import software.bernie.geckolib.model.GeoModel;
 
 import net.minecraft.resources.ResourceLocation;
 
-import com.qianyunyi.rider.entity.GouramEntity;
+import com.qianyunyi.rider.entity.vehicle.gouram.GouramEntity;
 
 public class GouramModel extends GeoModel<GouramEntity> {
 	@Override

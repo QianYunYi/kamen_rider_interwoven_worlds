@@ -130,9 +130,9 @@ public class HenshinManager {
                                           RiderConfig config, FormConfig formConfig) {
         if (isCrouching) {
             if (HenshinUtil.isEquippedArmor(serverPlayer, formConfig.getArmorSet()) || isWearingBelt(serverPlayer, config.getRiderName())) {
-                formConfig.getBehavior().handleDeactivation(serverPlayer, config, formConfig);
+                formConfig.getBehavior().handleUnForm(serverPlayer, config, formConfig);
             } else {
-                formConfig.getBehavior().handleQuickTransformation(serverPlayer, config, formConfig);
+                formConfig.getBehavior().handleQuickHenshin(serverPlayer, config, formConfig);
             }
         } else {
             formConfig.getBehavior().enterStandbyState(serverPlayer, config, formConfig);
@@ -152,9 +152,9 @@ public class HenshinManager {
                 if (config == null) continue;
                 if (isCrouching) {
                     if (HenshinUtil.isEquippedArmor(serverPlayer, formConfig.getArmorSet()) || isWearingBelt(serverPlayer, formConfig.getFormName())) {
-                        formConfig.getBehavior().handleDeactivation(serverPlayer, config, formConfig);
+                        formConfig.getBehavior().handleUnForm(serverPlayer, config, formConfig);
                     } else {
-                        formConfig.getBehavior().handleQuickTransformation(serverPlayer, config, formConfig);
+                        formConfig.getBehavior().handleQuickHenshin(serverPlayer, config, formConfig);
                     }
                 } else {
                     formConfig.getBehavior().enterStandbyState(serverPlayer, config, formConfig);
@@ -180,7 +180,7 @@ public class HenshinManager {
 
         if (isCrouching) {
             // 解除变身
-            formConfig.getBehavior().handleDeactivation(serverPlayer, riderConfig, formConfig);
+            formConfig.getBehavior().handleUnForm(serverPlayer, riderConfig, formConfig);
         } else {
             // 完成基础变身
             formConfig.getBehavior().handleHenshin(serverPlayer, riderConfig, formConfig);
@@ -206,7 +206,7 @@ public class HenshinManager {
                 return;
             }*/
             // 解除基础变身
-            formConfig.getBehavior().handleDeactivation(serverPlayer, riderConfig, formConfig);
+            formConfig.getBehavior().handleUnForm(serverPlayer, riderConfig, formConfig);
         } else if (tryAwakeningHenshin(serverPlayer, isCrouching, dataManager)) {
             // 非蹲下时，尝试强化形态变身
             return;
@@ -230,7 +230,7 @@ public class HenshinManager {
                 return;
             }*/
             // 取消强化变身
-            formConfig.getBehavior().handleDeactivation(serverPlayer, riderConfig, formConfig);
+            formConfig.getBehavior().handleUnForm(serverPlayer, riderConfig, formConfig);
         } else {
             // 执行强化变身
             formConfig.getBehavior().handleHenshin(serverPlayer, riderConfig, formConfig);
@@ -255,7 +255,7 @@ public class HenshinManager {
                 return;
             }*/
             // 解除强化形态
-            formConfig.getBehavior().handleDeactivation(serverPlayer, riderConfig, formConfig);
+            formConfig.getBehavior().handleUnForm(serverPlayer, riderConfig, formConfig);
             // 更新玩家数据
             RiderPlayerData data = RiderPlayerVariablesProvider.get(serverPlayer);
             data.setActiveFormName(""); // 清除形态名称

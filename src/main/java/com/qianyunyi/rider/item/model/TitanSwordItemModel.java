@@ -19,6 +19,6 @@ public class TitanSwordItemModel extends GeoModel<TitanSwordItem> {
 
 	@Override
 	public ResourceLocation getTextureResource(TitanSwordItem animatable) {
-		return new ResourceLocation("kamen_rider_interwoven_worlds", "textures/item/titan_sword.png");
+		return new ResourceLocation("kamen_rider_interwoven_worlds", "textures/item/geo/titan_sword.png");
 	}
 }

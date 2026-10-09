@@ -1,6 +1,6 @@
 package com.qianyunyi.rider.client.camera;
 
-import com.qianyunyi.rider.entity.GouramEntity;
+import com.qianyunyi.rider.entity.vehicle.gouram.GouramEntity;
 import net.minecraft.client.Camera;
 import net.minecraft.client.CameraType;
 import net.minecraft.client.Minecraft;

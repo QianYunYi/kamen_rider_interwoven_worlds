@@ -20,7 +20,7 @@ public class BeatChaser2000RightHandlebarItemRenderer extends GeoItemRenderer<Be
 
 	@Override
 	public RenderType getRenderType(BeatChaser2000RightHandlebarItem animatable, ResourceLocation texture, MultiBufferSource bufferSource, float partialTick) {
-		return RenderType.entityTranslucent(getTextureLocation(animatable));
+		return RenderType.entityTranslucent(texture);
 	}
 
 	@Override

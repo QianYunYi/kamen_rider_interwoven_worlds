@@ -28,7 +28,7 @@ public abstract class AwakeningHenshinBehavior extends BaseHenshinBehavior {
      */
     // 在 AwakeningHenshinBehavior 中
     @Override
-    public void handleDeactivation(ServerPlayer serverPlayer, RiderConfig riderConfig, FormConfig formConfig) {
+    public void handleUnForm(ServerPlayer serverPlayer, RiderConfig riderConfig, FormConfig formConfig) {
         handleCommonDeactivation(serverPlayer, riderConfig, formConfig);
 
         RiderPlayerData data = RiderPlayerVariablesProvider.get(serverPlayer);

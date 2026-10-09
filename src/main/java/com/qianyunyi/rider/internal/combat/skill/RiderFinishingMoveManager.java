@@ -9,6 +9,7 @@ import com.qianyunyi.rider.api.rider.behavior.IRiderSkill;
 import com.qianyunyi.rider.internal.registry.RiderRegistryHelper;
 import com.qianyunyi.rider.internal.registry.config.FormConfig;
 import com.qianyunyi.rider.internal.registry.config.RiderConfig;
+import com.qianyunyi.rider.internal.combat.skill.kuuga.supernatural.BeatChaserExplosiveChargeSkill;
 import com.qianyunyi.rider.util.HenshinUtil;
 import net.minecraft.ChatFormatting;
 import net.minecraft.server.level.ServerPlayer;
@@ -24,12 +25,20 @@ public class RiderFinishingMoveManager {
 	private static final Map<UUID, IRiderSkill> activeSkills = new ConcurrentHashMap<>();
 	// 存储玩家空手技能切换状态的Map
 	private static final Map<UUID, Boolean> emptyHandToggleMap = new ConcurrentHashMap<>();
+	// BeatChaser2000 爆炸冲锋必杀技（单例，不依赖形态）
+	private static final BeatChaserExplosiveChargeSkill BEAT_CHASER_SKILL = new BeatChaserExplosiveChargeSkill();
 
 	public static void execute(LivingEntity entity) {
 		if (entity == null) return;
 		if (entity.level().isClientSide) return;
 
 		if (entity instanceof ServerPlayer serverPlayer) {
+			// 骑乘 BeatChaser2000 时：爆炸冲锋必杀技
+			if (BEAT_CHASER_SKILL.isAvailable(serverPlayer)) {
+				BEAT_CHASER_SKILL.skill(serverPlayer);
+				return;
+			}
+
 			RiderPlayerData data = RiderPlayerVariablesProvider.get(serverPlayer);
 			if (data == null) return;
 

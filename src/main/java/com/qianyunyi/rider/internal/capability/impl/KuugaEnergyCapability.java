@@ -380,7 +380,7 @@ public class KuugaEnergyCapability implements IKuugaEnergyCapability {
         FormConfig formConfig = rider.getForm(data.getActiveFormName());
         if ("base".equals(form)) {
             IHenshinBehavior behavior = formConfig.getBehavior();
-            behavior.handleDeactivation(player, rider, formConfig);
+            behavior.handleUnForm(player, rider, formConfig);
         } else {
             GrowingFormKuugaHenshinBehavior.switchToBaseForm(player);
         }

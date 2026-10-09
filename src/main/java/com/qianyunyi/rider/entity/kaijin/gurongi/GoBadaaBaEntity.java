@@ -2,6 +2,7 @@ package com.qianyunyi.rider.entity.kaijin.gurongi;
 
 import com.qianyunyi.rider.entity.kaijin.gurongi.base.Gurongi;
 import com.qianyunyi.rider.entity.kaijin.gurongi.base.GurongiGroup;
+import com.qianyunyi.rider.entity.motoycle.base.BaseMotorcycleEntity;
 import com.qianyunyi.rider.init.KamenRiderInterwovenWorldsModEntities;
 import net.minecraft.core.BlockPos;
 import net.minecraft.nbt.CompoundTag;
@@ -24,7 +25,6 @@ import net.minecraft.world.entity.npc.Villager;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.level.Level;
 import net.minecraft.util.Mth;
-import net.minecraft.world.phys.AABB;
 import net.minecraft.world.phys.Vec3;
 import java.util.List;
 import net.minecraftforge.network.NetworkHooks;
@@ -338,7 +338,7 @@ public class GoBadaaBaEntity extends Gurongi {
 
     /**
      * 骑马移动：有目标时冲撞(速度快、带惯性、转向随速度受限)；无目标时减速回落到慢速行走。
-     * 物理模型参考 {@link com.qianyunyi.rider.entity.BaseMotorcycleEntity}（仅参考，不继承）。
+     * 物理模型参考 {@link BaseMotorcycleEntity}（仅参考，不继承）。
      */
     private void handleRamAttack() {
         if (!isMounted() || getMountTimer() > 0 || isDeadOrDying()) {

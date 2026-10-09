@@ -25,6 +25,6 @@ public class MaskRider1OldArmorRenderer extends GeoArmorRenderer<MaskRider1OldIt
 
 	@Override
 	public RenderType getRenderType(MaskRider1OldItem animatable, ResourceLocation texture, MultiBufferSource bufferSource, float partialTick) {
-		return RenderType.entityTranslucent(getTextureLocation(animatable));
+		return RenderType.entityTranslucent(texture);
 	}
 }

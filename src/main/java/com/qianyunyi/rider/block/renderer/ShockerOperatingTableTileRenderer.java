@@ -16,6 +16,6 @@ public class ShockerOperatingTableTileRenderer extends GeoBlockRenderer<ShockerO
 
 	@Override
 	public RenderType getRenderType(ShockerOperatingTableTileEntity animatable, ResourceLocation texture, MultiBufferSource bufferSource, float partialTick) {
-		return RenderType.entityTranslucent(getTextureLocation(animatable));
+		return RenderType.entityTranslucent(texture);
 	}
 }

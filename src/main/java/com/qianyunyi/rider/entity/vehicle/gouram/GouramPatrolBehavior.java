@@ -1,6 +1,5 @@
 package com.qianyunyi.rider.entity.vehicle.gouram;
 
-import com.qianyunyi.rider.entity.GouramEntity;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.entity.monster.Phantom;

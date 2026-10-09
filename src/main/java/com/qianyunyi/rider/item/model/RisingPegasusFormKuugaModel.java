@@ -19,6 +19,6 @@ public class RisingPegasusFormKuugaModel extends GeoModel<RisingPegasusFormKuuga
 
 	@Override
 	public ResourceLocation getTextureResource(RisingPegasusFormKuugaItem object) {
-		return new ResourceLocation("kamen_rider_interwoven_worlds", "textures/item/rising_pegasus_form_kuuga.png");
+		return new ResourceLocation("kamen_rider_interwoven_worlds", "textures/armor/rising_pegasus_form_kuuga.png");
 	}
 }

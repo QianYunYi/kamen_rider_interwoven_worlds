@@ -19,6 +19,6 @@ public class UltimateDragonWandItemModel extends GeoModel<UltimateDragonWandItem
 
 	@Override
 	public ResourceLocation getTextureResource(UltimateDragonWandItem animatable) {
-		return new ResourceLocation("kamen_rider_interwoven_worlds", "textures/item/ultimate_dragon_wand.png");
+		return new ResourceLocation("kamen_rider_interwoven_worlds", "textures/item/geo/ultimate_dragon_wand.png");
 	}
 }

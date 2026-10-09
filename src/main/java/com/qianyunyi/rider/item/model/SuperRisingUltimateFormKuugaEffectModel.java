@@ -19,6 +19,6 @@ public class SuperRisingUltimateFormKuugaEffectModel extends GeoModel<SuperRisin
 
 	@Override
 	public ResourceLocation getTextureResource(SuperRisingUltimateFormKuugaEffectItem object) {
-		return new ResourceLocation("kamen_rider_interwoven_worlds", "textures/item/super_rising_ultimate_form_kuuga_effect.png");
+		return new ResourceLocation("kamen_rider_interwoven_worlds", "textures/armor/super_rising_ultimate_form_kuuga_effect.png");
 	}
 }

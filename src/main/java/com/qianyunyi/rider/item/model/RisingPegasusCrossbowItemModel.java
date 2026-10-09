@@ -19,6 +19,6 @@ public class RisingPegasusCrossbowItemModel extends GeoModel<RisingPegasusCrossb
 
 	@Override
 	public ResourceLocation getTextureResource(RisingPegasusCrossbowItem animatable) {
-		return new ResourceLocation("kamen_rider_interwoven_worlds", "textures/item/rising_pegasus_crossbow.png");
+		return new ResourceLocation("kamen_rider_interwoven_worlds", "textures/item/geo/rising_pegasus_crossbow.png");
 	}
 }

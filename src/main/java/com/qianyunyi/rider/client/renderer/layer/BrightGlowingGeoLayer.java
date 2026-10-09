@@ -44,12 +44,17 @@ public class BrightGlowingGeoLayer<T extends GeoAnimatable> extends GeoRenderLay
         ResourceLocation texture = this.renderer.getTextureLocation(animatable);
         if (texture == null) return;
 
-        // 构建 glowmask 纹理路径: texture.png -> texture_glowmask.png
         String path = texture.getPath();
         int dotIndex = path.lastIndexOf('.');
-        String glowPath = (dotIndex == -1)
-                ? path + "_glowmask"
-                : path.substring(0, dotIndex) + "_glowmask" + path.substring(dotIndex);
+        String baseName = (dotIndex == -1) ? path : path.substring(0, dotIndex);
+        String extension = (dotIndex == -1) ? "" : path.substring(dotIndex);
+
+        String glowPath;
+        if (baseName.contains("textures/armor/")) {
+            glowPath = baseName.replace("textures/armor/", "textures/armor/glow/") + "_glowmask" + extension;
+        } else {
+            glowPath = baseName + "_glowmask" + extension;
+        }
         ResourceLocation glowTexture = ResourceLocation.fromNamespaceAndPath(texture.getNamespace(), glowPath);
 
         // 从客户端 level 获取时间（不依赖实体 level，避免 null）

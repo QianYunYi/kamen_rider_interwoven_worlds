@@ -19,6 +19,6 @@ public class PetrifyArcleItemItemModel extends GeoModel<PetrifyArcleItemItem> {
 
 	@Override
 	public ResourceLocation getTextureResource(PetrifyArcleItemItem animatable) {
-		return new ResourceLocation("kamen_rider_interwoven_worlds", "textures/item/petrify_arcle.png");
+		return new ResourceLocation("kamen_rider_interwoven_worlds", "textures/item/geo/petrify_arcle_item.png");
 	}
 }

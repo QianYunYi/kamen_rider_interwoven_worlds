@@ -9,7 +9,7 @@ import net.minecraft.client.renderer.texture.OverlayTexture;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.MultiBufferSource;
 
-import com.qianyunyi.rider.entity.GouramEntity;
+import com.qianyunyi.rider.entity.vehicle.gouram.GouramEntity;
 
 import com.mojang.blaze3d.vertex.VertexConsumer;
 import com.mojang.blaze3d.vertex.PoseStack;

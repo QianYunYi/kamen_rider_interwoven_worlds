@@ -19,6 +19,6 @@ public class RisingMightyFormKuugaModel extends GeoModel<RisingMightyFormKuugaIt
 
 	@Override
 	public ResourceLocation getTextureResource(RisingMightyFormKuugaItem object) {
-		return new ResourceLocation("kamen_rider_interwoven_worlds", "textures/item/rising_mighty_form_kuuga.png");
+		return new ResourceLocation("kamen_rider_interwoven_worlds", "textures/armor/rising_mighty_form_kuuga.png");
 	}
 }

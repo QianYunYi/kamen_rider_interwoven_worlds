@@ -6,7 +6,7 @@ import software.bernie.geckolib.cache.object.GeoBone;
 
 import net.minecraft.resources.ResourceLocation;
 
-import com.qianyunyi.rider.entity.BeatChaser2000Entity;
+import com.qianyunyi.rider.entity.motoycle.BeatChaser2000Entity;
 
 public class BeatChaser2000Model extends GeoModel<BeatChaser2000Entity> {
 	@Override

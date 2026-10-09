@@ -9,7 +9,7 @@ import net.minecraft.client.renderer.texture.OverlayTexture;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.MultiBufferSource;
 
-import com.qianyunyi.rider.entity.BeatChaser2000Entity;
+import com.qianyunyi.rider.entity.motoycle.BeatChaser2000Entity;
 
 import com.mojang.blaze3d.vertex.VertexConsumer;
 import com.mojang.blaze3d.vertex.PoseStack;

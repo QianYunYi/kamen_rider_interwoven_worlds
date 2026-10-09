@@ -19,6 +19,6 @@ public class MaskRider1OldModel extends GeoModel<MaskRider1OldItem> {
 
 	@Override
 	public ResourceLocation getTextureResource(MaskRider1OldItem object) {
-		return new ResourceLocation("kamen_rider_interwoven_worlds", "textures/item/masked_rider_1_old_model.png");
+		return new ResourceLocation("kamen_rider_interwoven_worlds", "textures/armor/masked_rider_1_old_model.png");
 	}
 }

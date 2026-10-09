@@ -19,6 +19,6 @@ public class TitanFormKuugaModel extends GeoModel<TitanFormKuugaItem> {
 
 	@Override
 	public ResourceLocation getTextureResource(TitanFormKuugaItem object) {
-		return new ResourceLocation("kamen_rider_interwoven_worlds", "textures/item/titan_form_kuuga.png");
+		return new ResourceLocation("kamen_rider_interwoven_worlds", "textures/armor/titan_form_kuuga.png");
 	}
 }

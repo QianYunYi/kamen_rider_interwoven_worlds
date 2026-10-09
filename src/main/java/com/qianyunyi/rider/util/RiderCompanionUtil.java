@@ -1,6 +1,6 @@
 package com.qianyunyi.rider.util;
 
-import com.qianyunyi.rider.entity.GouramEntity;
+import com.qianyunyi.rider.entity.vehicle.gouram.GouramEntity;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.TamableAnimal;
 

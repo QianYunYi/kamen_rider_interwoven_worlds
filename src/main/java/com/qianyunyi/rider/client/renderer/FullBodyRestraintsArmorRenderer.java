@@ -25,6 +25,6 @@ public class FullBodyRestraintsArmorRenderer extends GeoArmorRenderer<FullBodyRe
 
 	@Override
 	public RenderType getRenderType(FullBodyRestraintsItem animatable, ResourceLocation texture, MultiBufferSource bufferSource, float partialTick) {
-		return RenderType.entityTranslucent(getTextureLocation(animatable));
+		return RenderType.entityTranslucent(texture);
 	}
 }

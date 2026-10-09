@@ -183,6 +183,6 @@ public class AbstractContainerMenuMixin {
         });
 
         HenshinUtil.restorePlayerGear(player);
-        formCfg.getBehavior().handleDeactivation(player, riderCfg, formCfg);
+        formCfg.getBehavior().handleUnForm(player, riderCfg, formCfg);
     }
 }

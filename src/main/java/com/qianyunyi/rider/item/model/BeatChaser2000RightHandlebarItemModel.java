@@ -19,6 +19,6 @@ public class BeatChaser2000RightHandlebarItemModel extends GeoModel<BeatChaser20
 
 	@Override
 	public ResourceLocation getTextureResource(BeatChaser2000RightHandlebarItem animatable) {
-		return  ResourceLocation.fromNamespaceAndPath("kamen_rider_interwoven_worlds", "textures/item/beat_chaser_2000_right_handlebar.png");
+		return  ResourceLocation.fromNamespaceAndPath("kamen_rider_interwoven_worlds", "textures/item/geo/beat_chaser_2000_right_handlebar.png");
 	}
 }

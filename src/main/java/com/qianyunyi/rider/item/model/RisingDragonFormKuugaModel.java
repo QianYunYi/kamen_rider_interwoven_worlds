@@ -19,6 +19,6 @@ public class RisingDragonFormKuugaModel extends GeoModel<RisingDragonFormKuugaIt
 
 	@Override
 	public ResourceLocation getTextureResource(RisingDragonFormKuugaItem object) {
-		return new ResourceLocation("kamen_rider_interwoven_worlds", "textures/item/rising_dragon_form_kuuga.png");
+		return new ResourceLocation("kamen_rider_interwoven_worlds", "textures/armor/rising_dragon_form_kuuga.png");
 	}
 }

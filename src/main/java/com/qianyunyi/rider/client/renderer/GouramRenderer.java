@@ -12,7 +12,7 @@ import net.minecraft.util.Mth;
 
 import com.qianyunyi.rider.entity.model.GouramModel;
 import com.qianyunyi.rider.entity.layer.GouramLayer;
-import com.qianyunyi.rider.entity.GouramEntity;
+import com.qianyunyi.rider.entity.vehicle.gouram.GouramEntity;
 
 import com.mojang.blaze3d.vertex.VertexConsumer;
 import com.mojang.blaze3d.vertex.PoseStack;
@@ -29,7 +29,7 @@ public class GouramRenderer extends GeoEntityRenderer<GouramEntity> {
 
 	@Override
 	public RenderType getRenderType(GouramEntity animatable, ResourceLocation texture, MultiBufferSource bufferSource, float partialTick) {
-		return RenderType.entityTranslucent(getTextureLocation(animatable));
+		return RenderType.entityTranslucent(texture);
 	}
 
 	@Override

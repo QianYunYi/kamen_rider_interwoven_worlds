@@ -28,7 +28,7 @@ public abstract class BaseHenshinBehavior implements IHenshinBehavior {
      * @param formConfig 形态配置
      */
     @Override
-    public void handleQuickTransformation(ServerPlayer serverPlayer, RiderConfig config, FormConfig formConfig) {
+    public void handleQuickHenshin(ServerPlayer serverPlayer, RiderConfig config, FormConfig formConfig) {
         // 保存玩家当前装备（全部）
         CompoundTag standbyGear = HenshinUtil.getStandbyGear(serverPlayer);
         CompoundTag activeGear = HenshinUtil.getActiveGear(serverPlayer);
@@ -76,7 +76,7 @@ public abstract class BaseHenshinBehavior implements IHenshinBehavior {
      * @param formConfig 形态配置
      */
     @Override
-    public void handleDeactivation(ServerPlayer serverPlayer, RiderConfig riderConfig, FormConfig formConfig) {
+    public void handleUnForm(ServerPlayer serverPlayer, RiderConfig riderConfig, FormConfig formConfig) {
         RiderPlayerData data = RiderPlayerVariablesProvider.get(serverPlayer);
         HenshinState currentState = data.getCurrentState();
 
